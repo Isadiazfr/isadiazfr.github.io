@@ -7,23 +7,42 @@ body {
 }
 
 header {
-    position: relative;
+    background-color: #ffcc00;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #0c52df;
+    box-sizing: border-box;
 }
 
-header img {
-    border: 2px solid #fff;
+nav {
+    background-color: #333;
+    padding: 10px 0;
 }
 
-.titulo {
-    font-size: 2em;
+.nav-list {
+    list-style: none;
+    padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
-nav .nav-list .nav-link {
-    padding: 10px 20px;
+.nav-list li {
+    margin: 0 15px;
 }
 
-nav .nav-list .nav-link:hover {
+.nav-list li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.nav-list li a:hover {
     background-color: #ffcc00;
     color: #333;
 }
@@ -31,15 +50,19 @@ nav .nav-list .nav-link:hover {
 .slider {
     display: flex;
     justify-content: center;
+    margin: 30px 0;
     overflow: hidden;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
 }
 
 .slider img {
     max-width: 100%;
     max-height: 350px;
-    width: auto;
-    height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 2px solid #ddd;
@@ -51,12 +74,11 @@ nav .nav-list .nav-link:hover {
 #productos {
     padding: 50px 30px;
     background-color: #fff;
-    box-sizing: border-box;
-    position: relative;
     border: 2px solid #ddd;
-    margin: 30px 0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: 30px 0;
 }
 
 #productos h2 {
@@ -65,34 +87,64 @@ nav .nav-list .nav-link:hover {
     margin-bottom: 20px;
 }
 
-#productos .producto {
-    background-color: #f9f9f9;
-    padding: 25px;
-    margin: 15px 0;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
     border: 2px solid #ddd;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     box-sizing: border-box;
-    position: relative;
-    border-radius: 10px;
 }
 
-#productos .producto img {
-    float: left;
-    margin-right: 20px;
-    width: 100px;
-    height: 100px;
-    border: 2px solid #ddd;
-    border-radius: 10px;
+th, td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
 }
 
-#productos .producto .descripcion {
-    overflow: hidden;
+th {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    border-top: 4px solid #0c52df;
 }
 
 footer a {
+    color: #ffcc00;
     text-decoration: none;
 }
 
 footer a:hover {
     text-decoration: underline;
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffcc00;
+    color: #333;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.floating-button:hover {
+    background-color: #333;
+    color: #ffcc00;
 }
